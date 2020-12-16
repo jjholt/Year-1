@@ -1,0 +1,47 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage{setspace} \doublespacing
+
+\usepackage{algorithm2e}
+\usepackage[round, comma, authoryear]{natbib}
+\bibliographystyle{unsrtnat}
+
+\usepackage{titlesec}
+% \newcommand{\sectionbreak}{\clearpage}
+
+\usepackage{import}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{siunitx}
+
+\usepackage[numbered,framed]{matlab-prettifier}
+\usepackage[T1]{fontenc}
+\lstset{
+	style              = Matlab-editor,
+	basicstyle         = \fontsize{10}{9}\mlttfamily,
+	escapechar         = ",
+	mlshowsectionrules = true,
+}
+
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{quotes,arrows.meta, positioning,patterns}
+\usepackage{pgfplots}\pgfplotsset{compat=1.13}
+
+\begin{document}
+	\tableofcontents
+    \section{Calculus}
+    \subimport{files/}{topic5}
+    \section{Ordinary Differential Equations}
+    \subimport{files/}{topic6}
+    \section{Numerical Ordinary Differential Equations}
+    \subimport{files/}{topic8}
+    \section{Uncertainty and data}
+    \subimport{files/}{topic9}
+\end{document}
